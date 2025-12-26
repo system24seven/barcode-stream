@@ -1,0 +1,7 @@
+com/system24seven/ignition/barcodes/gateway/tcpsource/TcpListener.class
+com/system24seven/ignition/barcodes/gateway/tcpsource/TcpSource.class
+com/system24seven/ignition/barcodes/gateway/tcpsource/TcpConnectionListener.class
+com/system24seven/ignition/barcodes/gateway/EventStreamInstaller.class
+com/system24seven/ignition/barcodes/gateway/GatewayHook.class
+com/system24seven/ignition/barcodes/gateway/tcpsource/TcpClientHandler.class
+com/system24seven/ignition/barcodes/gateway/tcpsource/TcpSource$1.class
