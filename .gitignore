@@ -18,6 +18,37 @@
 *.zip
 *.tar.gz
 *.rar
+*.modl
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
+
+target/
+*.modl
+*.lck
+
+# IntelliJ IDEA
+.idea/*
+*.iml
+*.iws
+*.ipr
+out/
+.run/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Maven
+.mvn/
+release.properties
+pom.xml.releaseBackup
+pom.xml.tag
+pom.xml.next
+pom.xml.versionsBackup
+patching.xml
+
+
+
+
