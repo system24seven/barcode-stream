@@ -1,9 +1,0 @@
-/Users/davidstone/Documents/SDK/mcp-play/mcp-play-gateway/src/main/java/com/system24seven/ignition/mcpplay/source/gateway/MqttFunctionsImpl.java
-/Users/davidstone/Documents/SDK/mcp-play/mcp-play-gateway/src/main/java/com/system24seven/ignition/mcpplay/source/gateway/EventStreamInstaller.java
-/Users/davidstone/Documents/SDK/mcp-play/mcp-play-gateway/src/main/java/com/system24seven/ignition/mcpplay/source/gateway/MqttSourceGatewayHook.java
-/Users/davidstone/Documents/SDK/mcp-play/mcp-play-gateway/src/main/java/com/system24seven/ignition/mcpplay/source/gateway/TcpListener.java
-/Users/davidstone/Documents/SDK/mcp-play/mcp-play-gateway/src/main/java/com/system24seven/ignition/mcpplay/source/gateway/TcpSource.java
-/Users/davidstone/Documents/SDK/mcp-play/mcp-play-gateway/src/main/java/com/system24seven/ignition/mcpplay/source/gateway/MqttManager.java
-/Users/davidstone/Documents/SDK/mcp-play/mcp-play-gateway/src/main/java/com/system24seven/ignition/mcpplay/source/gateway/TcpClientHandler.java
-/Users/davidstone/Documents/SDK/mcp-play/mcp-play-gateway/src/main/java/com/system24seven/ignition/mcpplay/source/gateway/GatewayScriptModule.java
-/Users/davidstone/Documents/SDK/mcp-play/mcp-play-gateway/src/main/java/com/system24seven/ignition/mcpplay/source/gateway/MqttSource.java
