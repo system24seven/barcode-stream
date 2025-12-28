@@ -47,11 +47,11 @@ public class TcpClientHandler implements Runnable{
             // Read lines from the client
             while ((line = reader.readLine()) != null && running) {
                 context.logger().tracef("[" + clientAddress + ":" + clientPort + "] " + line);
-                Dictionary<String, String> params = new java.util.Hashtable<>();
-                params.put("source_ip",clientAddress);
-                params.put("barcode_string", line);
-                params.put("timestamp", Date.from(Instant.now()).toString());
-                this.subscriber.get().submitEvent(EventPayload.builder(params).build());
+                long timestamp = System.currentTimeMillis();
+                this.subscriber.get().submitEvent(EventPayload.builder((String)line).withMetadata(meta -> {
+                    meta.add("sourceIp",clientAddress )
+                            .add("timestamp",timestamp);
+                }).build());
             }
 
         } catch (IOException e) {
