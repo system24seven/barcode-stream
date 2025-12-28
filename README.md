@@ -7,7 +7,22 @@
 - Restart the gateway
 - Add an event stream with "Barcode Stream Source" as the event source
 - Input a port number to listen on (Must be above 1000)
+- Set the "Encoder" settings to "String"
 - Save the event stream
 - Open the firewall on your server on that port number (TCP)
 - Test the listener by sending a barcode to the port. 
+
+## Payload
+`event.data` will contain the raw ASCII string transmitted.
+
+`event.metadata` will contain the follosing structure:
+
+```
+{
+ sourceIp: <IP address of sender>
+ timestamp: <Epoch timestamp in millis>
+}
+
+```
+
 
