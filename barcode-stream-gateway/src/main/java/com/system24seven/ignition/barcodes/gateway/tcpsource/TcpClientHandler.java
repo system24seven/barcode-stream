@@ -62,6 +62,7 @@ public class TcpClientHandler implements Runnable{
             }
         } finally {
             try {
+                running = false;
                 clientSocket.close();
                 context.logger().debugf("[-] Connection closed by " + clientAddress + ":" + clientPort + "\n");
             } catch (IOException e) {
@@ -69,6 +70,15 @@ public class TcpClientHandler implements Runnable{
             }
         }
     }
+
+    public String getClientAddress() {
+        return clientAddress;
+    }
+
+    public Boolean isRunning() {
+        return running;
+    }
+
     public void shutdown() {
         running = false;
     }

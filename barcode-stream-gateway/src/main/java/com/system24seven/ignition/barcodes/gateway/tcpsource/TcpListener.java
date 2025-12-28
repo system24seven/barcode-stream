@@ -8,10 +8,12 @@ import java.io.*;
 import java.net.*;
 import java.util.concurrent.atomic.AtomicReference;
 
+
 /**
- * Simple TCP Socket Listener
- *
- * Listens on a specified port and prints any strings received to the console.
+ * TcpListener is responsible for creating and managing a TCP server socket
+ * that listens for incoming connections on a specified port and host. It handles
+ * the initialization, startup, and shutdown of the server, as well as the delegation
+ * of client connection handling to a TcpConnectionListener.
  */
 public class TcpListener {
     private final TcpSourceConfig settingsRecord;
@@ -24,9 +26,17 @@ public class TcpListener {
     private TcpConnectionListener listener;
 
     /**
-     * Represents a manager for handling MQTT operations.
+     * Constructs a new TcpListener instance, which is responsible for initializing
+     * a TCP server socket to listen for incoming connections, configured with a specific
+     * host and port. The instance also sets up a subscriber to handle incoming events
+     * and associates the listener with a specific application context.
      *
-     * @param settingsRecord - The MQTT settings record containing broker configuration details
+     * @param settingsRecord the configuration object containing the host and port
+     *                        settings for the TCP server.
+     * @param subscriber      the subscriber event handler that processes incoming events
+     *                        from the TCP connections.
+     * @param context         the application-specific context providing logging and other
+     *                        utilities required for the listener's operations.
      */
     public TcpListener(TcpSourceConfig settingsRecord, EventStreamSource.Subscriber subscriber, EventStreamContext context){
         this.settingsRecord = settingsRecord;
